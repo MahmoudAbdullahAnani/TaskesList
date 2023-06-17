@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;900&family=Gulzar&family=Mada:wght@200;300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700&display=swap');
+.App{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Mada', sans-serif;
+  background-color: rgb(39, 39, 146);
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+}
+.App>h1 {
+  text-align: center;
+  color: #fff;
+}
+.addTask{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+.addTask>button{
+  cursor: pointer;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border-radius: 40% 0 0 40%;
+  -webkit-border-radius: 40% 0 0 40%;
+  -moz-border-radius: 40% 0 0 40%;
+  -ms-border-radius: 40% 0 0 40%;
+  -o-border-radius: 40% 0 0 40%;
+  position: absolute;
+  left: 1px;
+  height: 100%;
+  border: 0px solid;
+  background-color: rgba(35, 35, 35, 0.97);
+  color: #fff;
+  z-index: 10;
+}
+.addTask>input {
+  padding: 15px 30px;
+  font-size: large;
+  direction: rtl;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 0px;
+  outline: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 10;
+}
+.errors{
+  margin: 5px 0;
+  font-size: larger;
+  width: 70%;
+  text-align: center;
+  color: #dcd9d9d4;
+  background-color: rgba(232, 32, 32, 0.721);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.perantTaskes{
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.perantTask{
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.83);
+  padding: 2px 5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.perantTask > textarea {
+  background-color: transparent;
+  border: 0px ;
+  outline: 0px ;
+  min-width: 200px;
+  font-size: large;
+}
+.iconsInput{
+  display: flex ;
+  gap: 5px;
+  justify-content: center;
+}
+.iconsInput > span{
+  cursor: pointer;
+  padding: 2px 4px;
+  background-color: #c3c3c3;
+  border: 0px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.holder{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.47);
+}
