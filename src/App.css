@@ -70,7 +70,7 @@
 }
 .perantTaskes{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
 }

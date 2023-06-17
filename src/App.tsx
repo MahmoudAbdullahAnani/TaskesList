@@ -43,8 +43,7 @@ const time: string = currentDate.toLocaleTimeString('en-US', options);
           listTask.map(task => {
             return (
               <div key={task} className="perantTask" title={`${time}`} >
-                <textarea  defaultValue={task} > 
-                  </textarea>
+                <textarea defaultValue={task} rows={6} cols={60}></textarea>
                 <div className="iconsInput">
                   <span onClick={() => {
                     const newList = listTask.filter(taskList => taskList !== task)
